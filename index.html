@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">My Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <main>
+            <!-- Landing Section -->
+            <div class="parallax">
+                <video autoplay muted loop class="background-video">
+                    <source src="assets/smoke.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="assets/fb-image.png" class="fallback-image" alt="Fallback Image">
+                <div class="overlay">
+                    <div class="welcome-text">
+                        <h1 class="pop-out-text">My Portfolio</h1>
+                        <p class="pop-out-paragraph">Explore my projects and learn more about my journey as a Software Engineer student.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="about-container">
+                    <div class="about-info">
+                        <h1>Hello,</h1>
+                        <h2>My name is Ahmad Mansyur Syaifuddin</h2>
+                        <div class="typewriter-container">
+                            <h3 class="typewriter-text">
+                                <span style="color: rgb(255, 255, 255);">I'm a</span>
+                                <span class="dynamic-text" style="color: orange; font-style: italic; text-decoration: underline;"></span>
+                            </h3>
+                        </div>
+                        <p>
+                            Computer Science student at BINUS University with a passion for software development. 
+                            My academic journey has not only provided me with a solid foundation in computer science, 
+                            but it has also equipped me with soft skills and knowledge necessary to create positive impact. 
+                            I am eager to learn and grow within the tech industry, particularly in environments that value creativity, collaboration, and excellence. 
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/ahmad.jpg"  alt="Ahmad Mansyur Syaifuddin Profile Picture">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <div class="education-container">
+                    <h1>Education</h1>
+                    <div class="education-item">
+                        <h2>BINUS University (Computer Science & Software Engineer)</h2>
+                        <p><strong>2022 — 2026</strong></p>
+                        <p><strong>GPA: 3.44 (on a 4.0 scale)</strong></p>
+                        <h3>My academic journey so far:</h3>
+                        
+                        <h4>Computing and Mathematics:</h4>
+                        <p>Built a strong foundation in algorithms, linear algebra, calculus, programming, and statistics.</p>
+                        <p><strong>Key Courses:</strong> Algorithm and Programming, Discrete Mathematics, Linear Algebra, Calculus.</p>
+                        
+                        <h4>Data Structures and Human Interaction:</h4>
+                        <p>Explored data management, user interaction, and foundational database concepts.</p>
+                        <p><strong>Key Courses:</strong> Data Structures, Human-Computer Interaction, Database Technology.</p>
+
+                        <h4>Software Engineering Principles:</h4>
+                        <p>Studied software development methodologies, design patterns, and project management techniques.</p>
+                        <p><strong>Key Courses: </strong>Software Engineering, Agile Software Development, Pattern Software Design.</p>
+
+                        <h4>Certificates:</h4>
+                        <div class="certificate-container">
+                            <img src="assets/2024-ICPC Asia Jakarta-Indonesia NC-MEDAL-1.png" alt="ICPC Certificate" class="certificate-img" onclick="openLightbox(this)">
+                            <img src="assets/CERTIFICATE-SoloLearn-Introduction to SQL.jpg" alt="Introduction to SQL Certificate" class="certificate-img" onclick="openLightbox(this)">
+                            <img src="assets/Beelingua-2024-C-English Professional Office-1.png" alt="Beelingua Certificate" class="certificate-img" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                
+                    <div class="education-item">
+                        <h2>SMAS Labschool UPI Bandung</h2>
+                        <p><strong>2019 - 2022</strong></p>
+                        <p>I studied at SMA Labschool UPI Bandung, where I focused on the Science stream (IPA).</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="project-container">
+                    <h1>My Projects</h1>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <img src="assets/budget-buddy.jpg" alt="Budget Buddy">
+                            <h2>Budget Buddy</h2>
+                            <p style="font-size: 0.9em; color: #ccc;">HTML, Python</p>
+                            <p>BudgetBuddy is a web application designed to help individuals manage their personal finances more efficiently.</p>
+                            <a href="https://budgetbuddybeta.streamlit.app/" class="view-button" target="_blank">View Project</a>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="assets/employee-salary-manager.jpg" alt="Employee Salary Manager">
+                            <h2>Employee Salary Manager</h2>
+                            <p style="font-size: 0.9em; color: #ccc;">PHP, MySQL</p>
+                            <p>Employee Salary Manager is an online database system that automates salary calculations and enhances the efficiency of employee payroll.</p>
+                            <a href="https://github.com/matmansy/Employee-Salary-Manager" class="view-button" target="_blank">View Project</a>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="assets/image-captioning-ai.jpg" alt="AI Image Captioning">
+                            <h2>Image Captioning AI</h2>
+                            <p style="font-size: 0.9em; color: #ccc;">Python</p>
+                            <p>AI Image Captioning is a machine learning model that generates descriptive captions for images using the Flickr30K dataset.</p>
+                            <a href="https://github.com/matmansy/Image-Captioning-AI.git" class="view-button" target="_blank">View Project</a>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="assets/tamagotchi.png" alt="Tamagotchi">
+                            <h2>Tamagotchi</h2>
+                            <p style="font-size: 0.9em; color: #ccc;">C</p>
+                            <p>This is a console-based virtual pet simulation where players care for a Tamagotchi-like creature by feeding, playing, and ensuring it sleeps.</p>
+                            <a href="https://github.com/matmansy/Tamagotchi.git" class="view-button" target="_blank">View Project</a>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="assets/gym-me.jpg" alt="GymMe">
+                            <h2>GymMe</h2>
+                            <p style="font-size: 0.9em; color: #ccc;">C#, ASP.NET</p>
+                            <p>GymMe is a comprehensive platform designed for fitness enthusiasts to easily purchase gym supplements.</p>
+                            <a href="https://github.com/matmansy/GymMe.git" class="view-button" target="_blank">View Project</a>
+                        </div>
+                                          
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <div class="title-container">
+                    <h1>Contact Me</h1>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h2>Email:</h2>
+                            <p>ahmad.syaifuddin@binus.ac.id</p>
+                            <h2>Phone:</h2>
+                            <p>(+62) 811-2443-540</p>
+                            <h2>Location:</h2>
+                            <p>Jakarta, Indonesia</p>
+                            <h2>LinkedIn:</h2>
+                            <p>
+                                <a href="https://www.linkedin.com/in/ahmad-syaifuddin-64a321275" target="_blank" rel="noopener noreferrer">
+                                    www.linkedin.com/in/ahmad-syaifuddin-64a321275
+                                </a>
+                            </p>
+                        </div>
+
+                        <form id="form"  class="contact-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()" style="display: none;">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>    
+
+    <script src="script.js" defer></script>
+    <link rel="preload" href="ahmad.jpg" as="image">
+</body>
+</html>
